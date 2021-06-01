@@ -142,6 +142,8 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _preferredColor = color;
     });
+    Navigator.of(context).pop(true);
+    _changeBackgroundColorOnRandom();
   }
 
   void _loadPreferredColor() async {
